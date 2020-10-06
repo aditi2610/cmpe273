@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dictionary</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/javascripts/dictionaryScript.js"></script>
+    <!-- <script type="text/javascript" src="/javascripts/fetchInjs.js"></script> -->
+  </head>
+  <body>
+    <center>
+      <h2>Dictionary</h2>
+      <div class="alert alert-success" role="alert">
+        <p>Please enter a word to get its meaning</p>
+        <br/>
+        Word:
+        <input type="text" id="word" placeholder="Enter a word" pattern='^[A-Za-z ]+$'/><br/><br/>
+        <input type="submit" onclick="getMeaning(document.getElementById('word').value)" 
+        value="Submit" class="btn btn-primary"/>
+      </div><br/>
+      <div id="meaning"></div>
+      <br/>
+      <div id="history"></div>
+  </center>
+  </body>
+</html>
